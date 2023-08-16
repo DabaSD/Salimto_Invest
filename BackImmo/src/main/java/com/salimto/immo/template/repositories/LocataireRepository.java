@@ -1,5 +1,9 @@
 package com.salimto.immo.template.repositories;
 
-public class LocataireRepository {
-    
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.salimto.immo.template.entities.Locataire;
+
+public interface LocataireRepository extends JpaRepository<Locataire, Long> {
+
 }
