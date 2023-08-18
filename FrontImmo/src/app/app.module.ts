@@ -8,9 +8,11 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MainComponent } from './main/main.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ListeLocataireComponent } from './liste-locataire/liste-locataire.component';
+import { AjoutLocataireComponent } from './locataire/ajout-locataire/ajout-locataire.component';
 
 const routes: Routes = [
   { path: 'listeLocataire', component: ListeLocataireComponent },
+  { path: 'ajout-locataire', component: AjoutLocataireComponent },
   { path: 'accueil', component:  MainComponent},
   // Définissez les routes pour les autres pages
   { path: '', redirectTo: '/accueil', pathMatch: 'full' } // Redirection par défaut
@@ -22,7 +24,8 @@ const routes: Routes = [
     HeaderComponent,
     SideNavComponent,
     MainComponent,
-    ListeLocataireComponent
+    ListeLocataireComponent,
+    AjoutLocataireComponent
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,7 @@ import {
   faMoneyBillWave,
   faFileContract,
   faUserCircle,
+  faAngleLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -23,7 +24,7 @@ export class SideNavComponent implements OnInit {
   faMoneyBillWave = faMoneyBillWave;
   faFileContract = faFileContract;
   faUserCircle = faUserCircle;
-
+  faAngleLeft = faAngleLeft;
   constructor() { }
 
   ngOnInit(): void {
