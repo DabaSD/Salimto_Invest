@@ -9,10 +9,12 @@ import { MainComponent } from './main/main.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ListeLocataireComponent } from './liste-locataire/liste-locataire.component';
 import { AjoutLocataireComponent } from './locataire/ajout-locataire/ajout-locataire.component';
+import { ModifLocataireComponent } from './locataire/modif-locataire/modif-locataire.component';
 
 const routes: Routes = [
   { path: 'listeLocataire', component: ListeLocataireComponent },
   { path: 'ajout-locataire', component: AjoutLocataireComponent },
+  { path: 'modif-locataire', component: ModifLocataireComponent },
   { path: 'accueil', component:  MainComponent},
   // Définissez les routes pour les autres pages
   { path: '', redirectTo: '/accueil', pathMatch: 'full' } // Redirection par défaut
@@ -25,7 +27,8 @@ const routes: Routes = [
     SideNavComponent,
     MainComponent,
     ListeLocataireComponent,
-    AjoutLocataireComponent
+    AjoutLocataireComponent,
+    ModifLocataireComponent
   ],
   imports: [
     BrowserModule,

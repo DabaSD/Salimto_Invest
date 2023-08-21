@@ -1,21 +1,26 @@
 .nav-items {
     padding-top: 40px;
     .nav-item {
-      padding: 20px 50px;
+      padding: 20px 18px;
       cursor: pointer;
       @media only screen and (max-width: 1300px) {
-        padding: 20px 30px;
+        padding: 20px 18px;
       }
+      
       &:hover {
         background-color: rgb(85, 138, 7);
       }
       fa-icon {
         margin-right: 15px;
         font-size: 22px;
+        @media only screen and (max-width: 1000px) {
+          font-size: 13px;
+          
+        }
       }
       span {
         display: inline;
-        @media only screen and (max-width: 1200px) {
+        @media only screen and (max-width: 1300px) {
           display: none;
         }
       }
